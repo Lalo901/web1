@@ -1,0 +1,152 @@
+body {
+    background: linear-gradient(to right, #b5b6ba, #a7e5e0, #b5b6ba);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to right, #243879, #a7e5e0, #243879);
+    color: white;
+    padding: 10px;
+    
+}
+
+.header-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.logo img {
+    float: left;
+    width: 380px;
+    height: 130px;
+    margin: 0;
+}
+
+nav {
+    position: relative;
+    float: right;
+    margin-right: 10px;
+  
+}
+
+nav ul {
+    position: relative;
+    left: 400px;
+    top: 15px;
+    margin-left: 10px;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+
+}
+
+nav ul li a:hover {
+    background: rgb(45, 137, 113);
+    color: white;
+}
+
+main {
+    font-family: 'Montserrat Alternates', sans-serif;
+    width: 940px;
+    margin: 0 auto;
+    color: #243879;
+}
+
+form {
+    margin: 40px 0px;
+}
+
+form label,
+form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+
+}
+
+.input-padron {
+    /*cambiamos el selector de etiqueta(form input, form textarea x class */
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+
+}
+fieldset{
+    border:none;
+}
+
+.checkbox {
+    margin: 20px 0;
+    
+}
+
+.enviar {
+    width: 30%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s background;
+    /*las transiciones antes eran solo x js cuando ahi mas de una transition se pone all */
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: darkorange;
+    transform: scale(1.2);
+    /*aumento un 20% el boton enviar se puede realizar vs transform a la vez en un mismo rengl ej transform: scale(1.2) rotate(20 deg)*/
+
+}
+
+footer {
+    padding: 10px;
+    display: block;
+    background: linear-gradient(to right, #243879, #a7e5e0, #243879);
+    color: white;
+    font-size: 1.2rem;
+
+}
+
+.direccion {
+    margin-top: 10px;
+    margin-left: 2.5rem;
+    width: 300px;
+}
+
+.direccion p {
+    margin: 5px 0px;
+}
+
+.ubicacion {
+    width: 20%;
+
+}
+
+.ubicacion iframe {
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0);
+
+}
+
+.derechos {
+    text-align: center;
+    color: black;
+}

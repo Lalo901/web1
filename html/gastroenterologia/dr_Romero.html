@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style_medico.css">
+    <title> Clinica del Sol </title>
+    <link rel="shortcut icon" href="/image/favicon.ico" />
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <figure class="logo">
+                <img src="/image/Logo.jpg" alt="Logo Clinica del Sol">
+            </figure>
+            <h1>Clinica del SOL SRL <br>
+                Sistema de Gestion de Turnos Medicos</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="#">NOSOTROS</a></li>
+                    <li><a href="/index.html">SERVICIOS</a></li>
+                    <li><a href="/contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <section class="left-area">
+            <h2>Seleccione la Especialidad Medica</h2>
+            <ul>
+                <li><a href="/html/clinicaMedica/clinica_medica.html">Clinica Medica</a></li>
+                <li><a href="/html/gastroenterologia/gastroenterologia.html">Gastroenterologia</a></li>
+                <li><a href="/html/cardiologia/cardiologia.html">Cardiologia</a></li>
+                <li><a href="/html/pediatria/pediatria.html">Pediatria</a></li>
+                <li><a href="/html/oncologia/oncologia.html">Oncologia</a></li>
+            </ul>
+        </section>
+        <div class="contenedor">
+
+
+            <div class="datos-medico">
+                <img src="/image/gastroenterologo/gastroenterologo1.jpg" alt="Dr_Romero" class="foto">
+
+                <div class="contenedor_aux">
+                    <div>Romero</div>
+                    <div>Carlos Santiago</div>
+                    <div>Gastroenterologia</div>
+                    <div>Martes - Jueves</div>
+                    <div>08 a 12:30 hs</div>
+
+                </div>
+
+
+            </div>
+
+            <form>
+                <div class="encabezado_formulario">DATOS DEL PACIENTE</div>
+
+                <label for="apellido"> Apellido</label>
+                <input type="text" id="apellido" pattern="^[a-zA-Z]+$" maxlength="20" class="input-padron" required>
+
+                <label for="nombre"> Nombre</label>
+                <input type="text" id="nombre" pattern="^[a-zA-Z]+$" maxlength="30" class="input-padron" required>
+
+
+                <label for="dni"> DNI</label>
+                <input type="number" step="1" inputmode="numeric" id="dni" pattern="^[0-9]{10}$" class="input-padron"
+                    required>
+
+                <label for="nombreapellido">Correo Electrònico</label>
+                <input type="email" id="correoelectronico" class="input-padron" required
+                    placeholder="email@dominio.com">
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(xx) xxxx xxxx"
+                    pattern="[\d()+\- ]*">
+
+                <label for="fecha"> Fecha de Turno</label>
+                <input type="date" id="fecha" class="input-padron" required>
+
+                <label for="hora"> Horario de Turno</label>
+                <input type="time" id="hora" class="input-padron" required>
+
+                <fieldset>
+                    <input type="submit" value="Registrar Turno" class="enviar">
+                    <a href="/html/gastroenterologia/gastroenterologia.html" class="boton-regresar">Volver al Listado</a>
+
+                </fieldset>
+
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="foot">
+            <div class="direccion">
+                <p>Dirección</p>
+                <p>Av. Cnel. Díaz 2211, C1425 CABA</p>
+
+            </div>
+
+            <figure class="ubicacion">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.6962164802935!2d-58.41068572491504!3d-34.58655245659074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca82f25717f3%3A0xfd421006c97049e3!2sCl%C3%ADnica%20del%20Sol!5e0!3m2!1ses-419!2sar!4v1696121400084!5m2!1ses-419!2sar"
+                    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </figure>
+            <div class="derechos">
+                <p class="copyright">&copy Copyright Clinica del Sol SRL - 2023</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style_contacto.css">
+    <title> Contacto </title>
+    <link rel="shortcut icon" href="/image/favicon.ico" />
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <figure class="logo">
+                <img src="/image/Logo.jpg" alt="Logo Clinica del Sol">
+            </figure>
+            <h1>Clinica del SOL SRL <br>
+                Sistema de Gestion de Turnos Medicos</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="#">NOSOTROS</a></li>
+                    <li><a href="/index.html">SERVICIOS</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <label for="nombreapellido"> Nombre y Apellido</label>
+            <input type="text" id="nombreapellido" class="input-padron" required>
+            <!--requeried campo obligatorio requerido-->
+
+            <label for="nombreapellido">Correo Electrònico</label>
+            <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" class="input-padron" required placeholder="(xx) xxxx xxxx">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" cols="70" rows="10" class="input-padron" required></textarea>
+
+            <fieldset> <!-- en lugar de div para buenas practicas y esto se trata de un conjunto del mismo campo-->
+
+                <legend>¿Como le gustaria que le contactemos? </legend>
+
+                <label for="radio-email"><input type="radio" name="contacto" value="email"
+                        id="radio-email">Email</label>
+
+                <!-- con name podemos seleccionar solo una de las opciones email o telf o whasapp c input el radio va antes pero ojo q tiene un salto de linea p resolver se crea una class en input padron los 1ros-->
+
+                <label for="radio-telefono"><input type="radio" name="contacto" value="telefono"
+                        id="radio-telefono">Telefono</label>
+
+
+                <label for="radio-whatsapp"><input type="radio" name="contacto" value="Whatsapp" id="radio-whatsapp"
+                        checked>Whatsapp</label>
+
+            </fieldset>
+           
+            <label class="checkbox"> <input type="checkbox" checked>¿Le gustaria recibir novedades de la Clinica del Sol SRL?</label>
+
+            <input type="submit" value="Enviar Formulario" class="enviar">
+        </form>
+        
+    </main>
+
+    <footer>
+        <div class="foot">
+            <div class="direccion">
+                <p>Dirección</p>
+                <p>Av. Cnel. Díaz 2211, C1425 CABA</p>
+
+            </div>
+
+            <figure class="ubicacion">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.6962164802935!2d-58.41068572491504!3d-34.58655245659074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca82f25717f3%3A0xfd421006c97049e3!2sCl%C3%ADnica%20del%20Sol!5e0!3m2!1ses-419!2sar!4v1696121400084!5m2!1ses-419!2sar"
+                    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </figure>
+            <div class="derechos">
+                <p class="copyright">&copy Copyright Clinica del Sol SRL - 2023</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

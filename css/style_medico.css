@@ -1,0 +1,271 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to right, #243879, #a7e5e0, #243879);
+    color: white;
+    padding: 10px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.logo img {
+    float: left;
+    width: 380px;
+    height: 130px;
+    margin: 0;
+}
+
+nav {
+    position: relative;
+    float: right;
+    margin-right: 10px;
+}
+
+nav ul {
+    position: relative;
+    left: 400px;
+    top: 15px;
+    margin-left: 10px;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+
+}
+
+nav ul li a:hover {
+    background: rgb(45, 137, 113);
+    color: white;
+}
+
+main {
+
+    display: flex;
+    /*flex-wrap:initial;*/
+    color: #243879;
+
+}
+
+.left-area {
+    flex: 0 0 12%;
+    text-align: center;
+    background-color: #ccc;
+}
+
+.left-area h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.left-area ul {
+    height: 82.5%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.left-area ul li {
+    display: block;
+    margin: 25px 25px 25px;
+
+}
+
+.left-area ul li a {
+    outline: none;
+    text-decoration: none;
+    display: block;
+    width: 88%;
+    margin-top: 20px;
+    margin-right: 0.625%;
+    text-align: center;
+    line-height: 3;
+    color: white;
+    border-radius: 15px;
+    border: solid;
+    font-size: 18px;
+}
+
+.left-area ul li:last-child a {
+    margin-right: 0;
+}
+
+.left-area ul li a:link,
+a:visited,
+a:focus {
+    background: rgb(94, 94, 93);
+}
+
+a:hover {
+    background: rgb(33, 144, 172);
+}
+
+a:active {
+    background: rgb(45, 137, 113);
+    color: white;
+}
+
+.contenedor{
+    flex: 0 0 85%; /* Ocupa el 85% del ancho y no puede crecer ni contraer */
+    display: flex;
+    flex-direction: column;   
+   
+}
+
+.datos-medico{
+    display: flex;
+    flex-direction: row;   
+    width: 80%;
+    
+}
+.foto{
+    /*flex:0 0 auto;*/
+    width: 120px;
+    height: 120px;
+    margin: 1.3rem 1.5rem;
+    border:solid;
+    border-radius: 10px;
+
+}
+.contenedor_aux{
+    width: 40%;
+}
+.contenedor_aux div{
+    /*display: flex;*/
+    flex-direction:column;
+    /*width: 100%;*/
+    height: 20px;
+    margin: 10px 0px 5px 5px;
+    padding-left: 10px;
+    color:white;
+    background-color: #3a55af;
+    border: solid;
+}
+
+form {
+    width: 50%;
+    margin: 1rem 1.5rem ;
+    
+}
+.encabezado_formulario{
+    padding: 5px;
+    color:white;
+    background-color: #3a55af;
+}
+form label,
+form legend {
+    display: block;
+    font-size: 20px;
+    margin: 5px 0 10px;
+
+}
+  
+input[type="text"]:invalid {
+    color: red;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.input-padron {
+    /*cambiamos el selector de etiqueta(form input, form textarea x class */
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+
+}
+fieldset{
+    display: flex;
+    width: 55%;
+    border:none;
+    justify-content:space-between;
+
+}
+
+.boton-regresar{    
+    outline: none;
+    text-decoration: none;
+    text-align: center;  
+    
+}
+.enviar, .boton-regresar {
+    
+    width: 25%;
+    padding: 15px 0;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    background: rgb(94, 94, 93);
+    border: none;
+    border-radius: 5px;
+    transition: 1s background;
+    /*las transiciones antes eran solo x js cuando ahi mas de una transition se pone all */
+    cursor: pointer;
+}
+
+.enviar:hover, .boton-regresar:hover{
+    background: rgb(33, 144, 172);
+    transform: scale(1.2);
+    /*aumento un 20% el boton enviar se puede realizarvs transform a la vez en un mismo rengl ej transform: scale(1.2) rotate(20 deg)*/
+
+}
+ 
+footer {
+    padding: 10px;
+    display: block;
+    background: linear-gradient(to right, #243879, #a7e5e0, #243879);
+    color: white;
+    font-size: 1.2rem;
+
+}
+
+
+.foot{
+    margin: 0%;
+    display:block;
+    background:linear-gradient(to right, #243879, #a7e5e0,#243879);
+    color:white;
+      
+}
+.direccion {
+    margin-top: 10px;
+    margin-left: 2.5rem;
+    width: 300px;
+}
+
+.direccion p {
+    margin: 5px 0px;
+}
+
+.ubicacion {
+    width: 20%;
+
+}
+
+.ubicacion iframe {
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0);
+
+}
+
+.derechos {
+    text-align: center;
+    color: black;
+}
