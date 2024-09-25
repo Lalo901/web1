@@ -35,7 +35,7 @@ erDiagram
 ### Materia
 - **ID_Materia** (PK)
 - Nombre_Materia
-- Créditos
+- Creditos
 
 ### Matricula
 - **ID_Matricula** (PK)
