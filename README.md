@@ -9,7 +9,7 @@ erDiagram
     MATERIA {
         string ID_Materia PK
         string Nombre_Materia
-        int Créditos
+        int Creditos
     }
     MATRICULA {
         string ID_Matricula PK
